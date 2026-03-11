@@ -1,0 +1,21 @@
+a=input(Enter ur password)
+up=0
+sm=0
+dg=0
+sp=0
+if(len(a)7)
+    for i in a
+        if(i.isupper())
+            up=up+1
+        elif(i.islower())
+            sm=sm+1 
+        elif(i.isdigit())
+            dg=dg+1 
+        else
+            sp=sp+1 
+    if(up0 and sp0 and dg0 and sm0)
+        print(It is strong!!!)
+    else
+        print(It is weak)
+else
+    print(weak due to less character)
