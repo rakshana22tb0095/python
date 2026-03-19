@@ -1,0 +1,23 @@
+class student:
+    dept="CSE"
+    def set_dim(self,name,marks):
+        self.name=name
+        self.marks=marks
+        self.p=0
+    def per(self):
+        self.p=sum(self.marks)//3
+    def display(self):    
+        self.per()
+        print("1.Name:",self.name)
+        print("2.score:",self.p)
+        print("3.DEPT:",student.dept)
+raks=student()
+ranj=student()
+sug=student()
+raks.set_dim("RAK",{50,40,50})
+ranj.set_dim("RAN",{30,60,40})
+sug.set_dim("SUG",{40,50,30})
+
+raks.display()
+ranj.display()
+sug.display()
